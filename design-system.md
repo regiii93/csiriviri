@@ -2,6 +2,8 @@
 
 **Kezdőoldali irány (2026. november 18.):** A második prototípus szerkezete lett a további tervezés alapja. A címsor DM Serif Display, a törzsszöveg DM Sans; a Licorice rövid, személyes hangsúlyokhoz jelenik meg. A gomb hoverállapotában a gomb helyben marad, csak az eltolt árnyék rövidül. A kézműves rész barna háttere, rózsaszín és arany részletei, valamint a második változat értékelési és záró szakasza maradnak kiindulópontok. A fejlécben és láblécben Facebook- és Instagram-ikon is szerepel. A finomított változat: `csiriviri-kezdooldal.html`.
 
+**Képforrás:** A kezdőoldal és a prototípusok tartalmi fotói kizárólag a `képek/szerkesztett/` mappából származhatnak. Az `images/` alatti példányok ezek helyi másolatai. A logó a `képek/logo/` mappából származik.
+
 Munkaváltozat a meglévő arculati képek, a `csiriviri-jegyzet.md` és a beszélgetésben rögzített döntések alapján. Az Eliza-féle minta az `eliza-design-system-minta.md` fájlban maradt meg. A konkrét betűpárosítás és méretezés tervezési javaslat. A gombok új iránya szögletes forma, jobbra-lefelé eltolt, éles árnyékkal, a felhasználó két képes referenciája alapján.
 
 ## Hangulat
