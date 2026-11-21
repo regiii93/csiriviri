@@ -11,4 +11,39 @@
 .hero .split img{width:100%;max-width:480px;height:auto;aspect-ratio:3/4;object-fit:cover;justify-self:end}@media(max-width:650px){.hero .split img{justify-self:center}}
 .reviews-section .review-controls button{display:grid;place-items:center}.reviews-section .review-controls svg{display:block;width:11px;height:20px}
 .birthday-hero-image{position:relative;width:100%;max-width:480px;justify-self:end}.birthday-hero-photo{position:relative;padding:0;background:transparent}.birthday-hero-photo>img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;box-shadow:none}.birthday-hero-image .portrait-signature{right:-70px;bottom:calc(24px + 3%);z-index:2;font-family:var(--font-script);font-size:39px;line-height:.9;color:#fff;background:#C79D35;padding:12px 18px 8px;box-shadow:0 8px 35px #46393725;white-space:nowrap;text-align:center}@media(max-width:650px){.birthday-hero-image{justify-self:center}.birthday-hero-image .portrait-signature{font-size:32px;right:-34px;bottom:calc(24px + 3%);text-align:center}}
-@media(min-width:651px){.birthday-hero-image{transform:translateX(-70px)}}
+/* Szülinapi programkártyák */
+.birthday-programs-intro{max-width:850px;margin:0 0 26px}
+.birthday-program-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:28px;row-gap:30px}
+.birthday-program-card{background:#fff;color:var(--ink);border:0;border-radius:0;padding:30px 27px 34px;box-shadow:7px 7px 0 #E3CECA;min-height:0}
+.birthday-program-card .why-icon-mark{width:64px;height:48px;margin:0 auto 18px;background:transparent;border-radius:0;isolation:isolate}
+.birthday-program-card .why-icon-mark:before,.birthday-program-card .why-icon-mark:after{display:block}
+.birthday-program-card .why-icon-mark:before{background-image:url('images/icon-stroke-beige.png')}
+.birthday-program-card:nth-child(3n + 2) .why-icon-mark:before{background-image:url('images/icon-stroke-pink.png')}
+.birthday-program-card .why-icon-mark:after{background-image:url('images/icon-stroke-brown.png')}
+.birthday-program-card .why-icon{width:24px;height:24px;color:#fff}
+.birthday-program-card h3{font-family:'DM Sans',Arial,sans-serif;font-size:26px;font-weight:700;line-height:1.2;margin:0 0 12px}
+.birthday-program-card p{font-size:16px;line-height:1.65;color:#655651;margin:0}
+
+/* Keep the image and its overlapping caption inside the right hero column. */
+@media(min-width:651px){
+  .hero .split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:clamp(32px,5vw,70px)}
+  .birthday-hero-image{width:calc(100% - 70px);margin:0 70px 0 0;justify-self:end;transform:none}
+  .birthday-hero-image .portrait-signature{right:-70px;max-width:none;white-space:nowrap}
+}
+@media(min-width:651px) and (max-width:900px){
+  .hero h1{font-size:clamp(40px,5.2vw,58px)}
+  .hero .lead{font-size:18px;line-height:1.65}
+  .hero p{font-size:17px;line-height:1.65}
+  .birthday-hero-image .portrait-signature{right:-34px;font-size:clamp(24px,3.1vw,30px);padding:10px 15px 7px}
+}
+@media(max-width:760px){
+  .birthday-program-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}
+  .birthday-program-card{padding:26px 24px 30px}
+  .birthday-hero-image{width:calc(100% - 34px);max-width:480px;margin-right:34px;justify-self:end;transform:none}
+}
+@media(max-width:650px){
+  .hero .split{grid-template-columns:1fr}
+  .birthday-program-grid{grid-template-columns:1fr}
+  .birthday-hero-image .portrait-signature{right:-34px;font-size:32px}
+}
+@media(max-width:420px){.birthday-hero-image .portrait-signature{font-size:28px;padding:8px 12px 6px}}
