@@ -47,3 +47,8 @@
   .birthday-hero-image .portrait-signature{right:-34px;font-size:32px}
 }
 @media(max-width:420px){.birthday-hero-image .portrait-signature{font-size:28px;padding:8px 12px 6px}}
+.birthday-hero-image .portrait-signature .gift-icon{display:inline-block;width:18px;height:18px;vertical-align:-2px;margin-left:4px;fill:currentColor}
+
+.birthday-hero-image .portrait-signature .gift-icon{width:.58em;height:.58em;vertical-align:-.06em;margin-left:.12em}
+
+@media(max-width:650px){.hero{padding-bottom:100px}.birthday-hero-image{width:calc(100% - 52px);margin-right:52px}}
