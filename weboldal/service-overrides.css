@@ -53,7 +53,29 @@
 
 @media(max-width:650px){.hero{padding-bottom:100px}.birthday-hero-image{width:calc(100% - 52px);margin-right:52px}}
 
+/* Overlapped polaroid photos for the birthday venue section. */
+.birthday-locations .photo-pair{position:relative;display:block;width:min(100%,900px);height:clamp(510px,55vw,560px);margin:36px auto 0;isolation:isolate}
+.birthday-locations .photo-pair img{position:absolute;display:block;box-sizing:border-box;object-fit:cover;background:#fff;padding:10px 10px 28px;border:1px solid #e9e1dc;box-shadow:9px 11px 0 #D6C0AD}
+.birthday-locations .photo-pair img:first-child{top:12px;left:7%;width:min(68%,320px);height:auto;aspect-ratio:3/4;transform:rotate(-4deg);z-index:1}
+.birthday-locations .photo-pair img:last-child{top:145px;right:7%;width:min(78%,440px);height:auto;aspect-ratio:4/3;object-position:left center;transform:rotate(3deg);z-index:2}
+@media(max-width:760px){.birthday-locations .photo-pair{height:500px}.birthday-locations .photo-pair img:first-child{left:0;width:min(68%,320px)}.birthday-locations .photo-pair img:last-child{top:140px;right:0;width:min(78%,440px)}}
 
-.birthday-locations .photo-pair img{height:auto;aspect-ratio:3/4;object-fit:cover}
+.birthday-locations .photo-pair img{box-shadow:none}
 
-.birthday-locations .photo-pair img:last-child{object-position:left center}
+.birthday-steps-cta{display:flex;justify-content:center;margin:34px auto 0}
+
+.dark .solid-btn.light{background:#EFD1D5;color:#463937;box-shadow:6px 6px 0 #C79D35}
+.dark .solid-btn.light:hover{box-shadow:2px 2px 0 #C79D35}
+
+.facts .pricing-fact-icon{display:block;width:24px;height:24px;color:#E8C879;margin:0 0 14px}
+
+.dark .birthday-starting-price{display:flex;flex-direction:column;align-items:flex-start;gap:6px;max-width:620px;margin:32px 0 38px;padding:18px 22px;border-left:3px solid #E8C879;background:#ffffff0b}
+.dark .birthday-starting-price p{margin:0;color:#E8C879;font-size:14px;font-weight:700;line-height:1.4}
+.dark .birthday-starting-price strong{font-family:var(--font-heading);font-size:clamp(30px,3vw,42px);line-height:1.1;color:#fff}
+.dark .birthday-starting-price span{font-size:14px;line-height:1.5;color:#f3e9e6}
+@media(max-width:600px){.dark .birthday-starting-price{gap:8px;margin:26px 0 32px;padding:16px 18px}}
+
+.dark .birthday-pricing-cta{display:flex;align-items:center;justify-content:flex-start;gap:clamp(24px,3vw,40px);margin-top:30px}
+.dark .birthday-pricing-cta .birthday-starting-price{flex:1 1 620px;margin:0;max-width:620px}
+.dark .birthday-pricing-cta .solid-btn{flex:0 0 auto;margin:0}
+@media(max-width:700px){.dark .birthday-pricing-cta{flex-direction:column;align-items:stretch;gap:20px}.dark .birthday-pricing-cta .birthday-starting-price{max-width:none;flex-basis:auto}.dark .birthday-pricing-cta .solid-btn{align-self:flex-start}}
