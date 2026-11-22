@@ -82,3 +82,74 @@ document.querySelectorAll('.reviews-section').forEach(section=>{
   reduced.addEventListener('change',restart);
   position(false);requestAnimationFrame(()=>{track.style.transition='';restart()});
 });
+
+const faqMotion=document.querySelectorAll('.faq-section .faq details');
+const faqReduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+faqMotion.forEach(detail=>{
+  const summary=detail.querySelector('summary');
+  const answer=detail.querySelector('.faq-answer');
+  if(!summary||!answer)return;
+  let actionId=0;
+  summary.addEventListener('click',event=>{
+    event.preventDefault();
+    const opening=!detail.open||detail.classList.contains('is-closing');
+    const currentHeight=answer.getBoundingClientRect().height;
+    const action=++actionId;
+    answer.style.height=`${currentHeight}px`;
+    answer.getBoundingClientRect();
+    if(faqReduceMotion.matches){
+      detail.open=opening;
+      detail.classList.remove('is-closing');
+      answer.style.height=opening?'auto':'0px';
+      answer.style.removeProperty('opacity');
+      answer.style.removeProperty('transform');
+      return;
+    }
+    if(opening){
+      faqMotion.forEach(other=>{
+        if(other!==detail&&other.open&&!other.classList.contains('is-closing'))other.querySelector('summary')?.click();
+      });
+      detail.open=true;
+      detail.classList.remove('is-closing');
+      answer.style.opacity='0';
+      answer.style.transform='translateY(-5px)';
+      requestAnimationFrame(()=>{
+        if(action!==actionId)return;
+        answer.style.height=`${answer.scrollHeight}px`;
+        answer.style.removeProperty('opacity');
+        answer.style.removeProperty('transform');
+      });
+      const finishOpen=event=>{
+        if(event.target!==answer||event.propertyName!=='height')return;
+        answer.removeEventListener('transitionend',finishOpen);
+        if(action!==actionId)return;
+        answer.style.height='auto';
+      };
+      answer.addEventListener('transitionend',finishOpen);
+    }else{
+      detail.classList.add('is-closing');
+      requestAnimationFrame(()=>{
+        if(action===actionId){answer.style.height='0px';answer.style.opacity='0';answer.style.transform='translateY(-5px)'}
+      });
+      const finishClose=event=>{
+        if(event.target!==answer||event.propertyName!=='height')return;
+        answer.removeEventListener('transitionend',finishClose);
+        if(action!==actionId)return;
+        detail.open=false;
+        detail.classList.remove('is-closing');
+        answer.style.removeProperty('height');
+        answer.style.removeProperty('opacity');
+        answer.style.removeProperty('transform');
+      };
+      answer.addEventListener('transitionend',finishClose);
+      window.setTimeout(()=>{
+        if(action!==actionId)return;
+        detail.open=false;
+        detail.classList.remove('is-closing');
+        answer.style.removeProperty('height');
+        answer.style.removeProperty('opacity');
+        answer.style.removeProperty('transform');
+      },500);
+    }
+  });
+});
