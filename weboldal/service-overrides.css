@@ -77,5 +77,36 @@
 
 .dark .birthday-pricing-cta{display:flex;align-items:center;justify-content:flex-start;gap:clamp(24px,3vw,40px);margin-top:30px}
 .dark .birthday-pricing-cta .birthday-starting-price{flex:1 1 620px;margin:0;max-width:620px}
-.dark .birthday-pricing-cta .solid-btn{flex:0 0 auto;margin:0}
+.dark .birthday-pricing-cta .solid-btn{flex:0 0 auto;margin:0 auto}
 @media(max-width:700px){.dark .birthday-pricing-cta{flex-direction:column;align-items:stretch;gap:20px}.dark .birthday-pricing-cta .birthday-starting-price{max-width:none;flex-basis:auto}.dark .birthday-pricing-cta .solid-btn{align-self:flex-start}}
+
+.dark .facts p .pricing-highlight{color:#E8C879}
+
+.about-copy-layout{align-items:stretch}
+.about-copy-layout .about-photo-frame{position:relative;min-width:0;min-height:0}
+.about-copy-layout img.about-photo{position:absolute;top:50%;left:50%;width:auto;height:auto;max-width:100%;max-height:100%;transform:translate(-50%,-50%);object-fit:contain}
+@media(max-width:650px){.about-copy-layout .about-photo-frame{width:min(100%,420px);aspect-ratio:2186/2912;justify-self:center}}
+
+.faq-layout{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);align-items:center;gap:clamp(32px,5vw,64px)}
+.faq-image{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;box-shadow:8px 8px 0 #d6c0ad}
+.faq-content{min-width:0}
+@media(max-width:700px){.faq-layout{grid-template-columns:1fr;gap:30px}.faq-image{width:min(100%,440px);justify-self:center}.faq-content{width:100%}}
+
+.birthday-support-section{position:relative;isolation:isolate;background:linear-gradient(#FFF9F780,#FFF9F780),url("images/pasztell-bokeh-szalag.png") center 52%/cover no-repeat;padding:clamp(64px,8vw,110px) 0}
+.birthday-support-copy{max-width:920px;margin-inline:auto;padding:clamp(30px,5vw,60px);background:#FFFBF8ED;box-shadow:12px 12px 0 #D6C0AD}
+.birthday-support-section .section-head{max-width:850px;margin-bottom:28px}
+.birthday-support-section p{max-width:850px;font-size:18px;line-height:1.75}
+.birthday-support-section p+p{margin-top:24px}
+.birthday-support-section strong{font-weight:700}
+@media(max-width:650px){.birthday-support-section{padding:52px 0}.birthday-support-copy{padding:28px 24px}.birthday-support-section p{font-size:16px;line-height:1.7}}
+
+@media(max-width:900px){.birthday-program-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}.birthday-program-card{padding:26px 24px 30px}.about-copy-layout{grid-template-columns:minmax(0,1fr);gap:36px}.about-copy-layout .about-photo-frame{width:min(100%,440px);aspect-ratio:2186/2912;justify-self:center}}
+@media(max-width:650px){.birthday-program-grid{grid-template-columns:1fr}.about-copy-layout .about-photo-frame{width:min(100%,420px)}}
+
+.birthday-program-grid{align-items:stretch}.birthday-program-card{height:100%}
+
+@media(max-width:900px){.contact .contact-card{margin-inline:auto}}
+
+.birthday-program-grid{grid-auto-rows:1fr}
+
+@media(max-width:900px){.contact .contact-card{width:100%;max-width:none;margin-inline:0}}
