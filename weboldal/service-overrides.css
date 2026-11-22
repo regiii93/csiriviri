@@ -128,3 +128,13 @@
 .contact .form-consent{display:flex;align-items:flex-start;gap:9px;margin:16px 0 0;cursor:pointer;font-size:14px;line-height:1.5;font-weight:400}.contact .form-consent input{appearance:none;width:17px;height:17px;flex:none;margin:2px 0 0;padding:0;border:1px solid #d8c8c0;border-radius:2px;background:#fff;position:relative;display:inline-grid;place-items:center;cursor:pointer}.contact .form-consent input:after{content:"";position:absolute;left:50%;top:50%;width:7px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:translate(-50%,-65%) rotate(-45deg) scale(0);transition:transform .12s ease}.contact .form-consent input:checked{background:#9b7426;border-color:#9b7426}.contact .form-consent input:checked:after{transform:translate(-50%,-65%) rotate(-45deg) scale(1)}.contact .form-consent input:focus-visible{outline:2px solid #b69a81;outline-offset:2px}.contact .form-consent a{color:#A88023;text-decoration:underline;text-underline-offset:2px}.contact .form-consent a:hover{color:#805C12}.contact .form-consent.has-error input:not(:checked){border:2px solid #B94B4B;background:#fffafa}
 
 @media(min-width:821px){.faq-section{padding-bottom:clamp(125px,10vw,160px)}}
+
+.birthday-hero-image .face-paint-signature .gift-icon{width:.9em;height:.9em;vertical-align:-.08em}
+
+.face-paint-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:940px;margin:0 auto}
+.face-paint-card{overflow:hidden;background:#FFFBF8ED;box-shadow:12px 12px 0 #D6C0AD}
+.face-paint-card>img{display:block;width:100%;height:300px;object-fit:cover}
+.face-paint-card-copy{padding:28px 32px 32px}
+.face-paint-card-copy .section-head{font-size:clamp(30px,3vw,40px);margin-bottom:12px}
+.face-paint-card-copy p{margin:0;font-size:16px;line-height:1.7}
+@media(max-width:650px){.face-paint-card-grid{grid-template-columns:1fr;gap:22px}.face-paint-card>img{height:260px}.face-paint-card-copy{padding:24px}}
