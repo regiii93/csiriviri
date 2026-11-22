@@ -138,3 +138,5 @@
 .face-paint-card-copy .section-head{font-size:clamp(30px,3vw,40px);margin-bottom:12px}
 .face-paint-card-copy p{margin:0;font-size:16px;line-height:1.7}
 @media(max-width:650px){.face-paint-card-grid{grid-template-columns:1fr;gap:22px}.face-paint-card>img{height:260px}.face-paint-card-copy{padding:24px}}
+
+@media(max-width:1000px){.face-paint-about .wrap.split{grid-template-columns:minmax(0,1fr);gap:36px;max-width:760px}.face-paint-about .wrap.split>img{height:auto;aspect-ratio:3/2;object-fit:cover}}
