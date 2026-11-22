@@ -120,3 +120,5 @@
 .faq-section .faq details[open]:not(.is-closing) .faq-answer{opacity:1;transform:translateY(0)}
 .faq-section .faq-answer p{font-size:16px;margin:12px 0 2px;max-width:760px}
 @media(prefers-reduced-motion:reduce){.faq-section .faq summary::before,.faq-section .faq-answer{transition:none}}
+
+.contact .contact-copy .section-head{font-size:clamp(38px,3.7vw,58px)}.contact .contact-copy>p:not(.kicker){font-size:16px;line-height:1.65}
