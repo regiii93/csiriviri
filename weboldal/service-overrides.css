@@ -186,3 +186,4 @@
 @media(max-width:650px){.craft-order-steps{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:650px){.craft-hero{padding-bottom:115px}}
 @media(max-width:600px){.craft-workshop .wrap.split{row-gap:40px}}
+@media(min-width:901px){.craft-order-steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
