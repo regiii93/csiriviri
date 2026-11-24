@@ -48,3 +48,5 @@
 
 @media(max-width:850px){.site-header .header-inner>nav#menu,.site-header .header-inner>nav#menu.open{left:50%;right:auto;width:max-content;max-width:calc(100vw - 36px);transform:translateX(-50%);padding-inline:18px}}
 @media(min-width:761px) and (max-width:850px){.site-header .header-inner>nav#menu .nav-cta-responsive{display:none}}
+
+.form-status:not(:empty){color:#B94B4B;font-size:14px;font-weight:700;line-height:1.4;margin:0 0 16px;text-align:center}
