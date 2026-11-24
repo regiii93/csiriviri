@@ -45,6 +45,16 @@
     @media(max-width:1050px){.nav .nav-cta-responsive{display:inline-flex;padding:10px 12px;font-size:inherit;white-space:nowrap}}
     @media(max-width:760px){.nav .nav-cta-responsive{width:max-content;align-self:flex-start;justify-content:center;margin-top:8px}}
 .contact-card .validation-flash{animation:validation-flash .5s ease}@keyframes validation-flash{0%,100%{box-shadow:0 0 0 0 #B94B4B00}35%{box-shadow:0 0 0 4px #B94B4B80}}
+
+    /* Match the service pages' contact section without changing the rest of the homepage. */
+    .contact .kicker{line-height:1.7;margin-bottom:14px}
+    .contact .contact-copy h2{margin-bottom:26px}
+    .contact .contact-copy>p:not(.kicker){font-size:16px;line-height:1.65;margin:16px 0}
+    .contact .contact-details{max-width:430px}
+    .contact .contact-card{line-height:normal}
+    .contact .contact-card legend{padding-inline:2px}
+    .contact .contact-card .solid-btn{font-family:var(--font-body);font-size:14px;font-weight:700;line-height:normal}
+    @media(min-width:901px){.contact .contact-copy .contact-details{margin:38px auto 0}}
   </style>
 </head>
 <body id="top">
