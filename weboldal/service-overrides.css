@@ -192,3 +192,36 @@
 .craft-season-carousel>img.slide.active{z-index:2;opacity:1}
 @media(prefers-reduced-motion:reduce){.craft-season-carousel>img.slide{transition:none}}
 @media(min-width:901px){.craft-season-carousel{width:min(78%,900px);margin-inline:0}}
+
+.craft-season-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,360px);align-items:stretch;gap:clamp(24px,4vw,48px);margin-top:32px}.craft-season-layout .craft-season-carousel{width:100%;max-width:none;margin:0;align-self:center}.craft-facebook-feed{min-width:0;min-height:520px;overflow:hidden;border:1px solid rgba(126,93,75,.14);border-radius:16px;background:#fff;box-shadow:0 12px 32px rgba(74,49,38,.08)}.craft-facebook-feed iframe{display:block;width:100%;height:520px;border:0}@media(max-width:900px){.craft-season-layout{grid-template-columns:minmax(0,1fr);gap:28px}.craft-season-layout .craft-season-carousel{width:100%;max-width:700px;margin-inline:auto}.craft-facebook-feed{width:min(100%,500px);margin-inline:auto}}.craft-facebook-feed{width:min(100%,360px);max-width:360px;min-width:0;margin-inline:auto;justify-self:center;background:transparent;border:0;border-radius:0;box-shadow:none}
+.craft-facebook-feed iframe{width:100%;max-width:360px}
+@media(max-width:900px){.craft-facebook-feed{width:min(100%,360px);margin-inline:auto}}
+
+.gift-voucher-section{padding:42px 0;background:#f7e8ea}.gift-voucher-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;align-items:center;gap:clamp(24px,5vw,64px)}.gift-voucher-copy{max-width:760px}.gift-voucher-copy .section-head{margin:0 0 14px}.gift-voucher-copy>p:not(.kicker){margin:0 0 20px}.gift-voucher-image{display:block;width:min(100%,220px);height:auto;justify-self:end}@media(max-width:700px){.gift-voucher-section{padding:36px 0}.gift-voucher-layout{grid-template-columns:minmax(0,1fr);gap:22px}.gift-voucher-image{width:min(100%,180px);justify-self:center}}
+.gift-voucher-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);align-items:stretch}.gift-voucher-copy{grid-column:2;grid-row:1;max-width:none;align-self:center}.gift-voucher-image{grid-column:1;grid-row:1;width:100%;height:100%;max-height:100%;object-fit:contain;object-position:left center;justify-self:start;align-self:stretch}
+@media(max-width:700px){.gift-voucher-layout{grid-template-columns:minmax(0,1fr)}.gift-voucher-image{grid-column:1;grid-row:1;width:min(100%,280px);height:auto;justify-self:start}.gift-voucher-copy{grid-column:1;grid-row:2}}
+.gift-voucher-image{width:68%;height:100%;object-fit:cover;object-position:center;justify-self:center}
+@media(max-width:700px){.gift-voucher-image{width:min(100%,280px);height:auto;object-fit:contain;justify-self:start}}
+@media(min-width:701px){.gift-voucher-layout{grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(12px,2vw,24px)}.gift-voucher-image{width:100%;height:100%;object-fit:cover;justify-self:stretch}}
+@media(min-width:701px){.gift-voucher-image{width:82%;justify-self:center}}
+@media(max-width:700px){.gift-voucher-layout{grid-template-columns:minmax(0,1fr);gap:24px}.gift-voucher-image{grid-column:1;grid-row:1;width:min(100%,300px);height:auto;aspect-ratio:1/1;object-fit:contain;justify-self:start}.gift-voucher-copy{grid-column:1;grid-row:2}}
+@media(min-width:701px) and (max-width:900px){.gift-voucher-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(12px,2vw,20px)}.gift-voucher-image{width:100%;justify-self:stretch}}
+@media(max-width:700px){.gift-voucher-image{justify-self:center}}
+
+
+.craft-facebook-feed{min-height:0}
+
+
+.reviews-section{overflow-x:clip}
+
+@media(min-width:901px) and (max-width:1308px){.craft-season-layout .craft-season-carousel{width:100%;height:clamp(320px,34vw,400px);aspect-ratio:auto;margin-inline:auto}.craft-season-carousel>img.slide{object-position:center}}
+@media(max-width:900px){.craft-season-layout .craft-season-carousel{height:auto;aspect-ratio:1640/924}}
+@media(min-width:651px){.reviews-section .quote:before{top:-18px}}
+@media(max-width:650px){.reviews-section .quote:before{top:-14px}}
+
+.reviews-section .quote{box-shadow:0 -30px 0 #fff}.reviews-section .quote:before{top:-24px}
+.reviews-section .quote:before{font-size:120px;top:-27px}
+
+.reviews-section .quote{display:flex;flex-direction:column;justify-content:center}
+
+.reviews-section .quote{justify-content:flex-start}.reviews-section .quote blockquote{flex:1;display:flex;align-items:center}.reviews-section .quote cite{margin-top:auto;align-self:flex-start}
