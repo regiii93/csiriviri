@@ -33,3 +33,5 @@
     @media(max-width:1050px){.nav .nav-cta-responsive{display:inline-flex;padding:10px 12px;font-size:inherit;white-space:nowrap}}
     @media(max-width:760px){.nav .nav-cta-responsive{width:max-content;align-self:flex-start;justify-content:center;margin-top:8px}}
 .contact-card .validation-flash{animation:validation-flash .5s ease}@keyframes validation-flash{0%,100%{box-shadow:0 0 0 0 #B94B4B00}35%{box-shadow:0 0 0 4px #B94B4B80}}
+
+@media(max-width:760px){.footer .reveal{opacity:1;transform:none}}

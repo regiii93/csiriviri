@@ -230,3 +230,6 @@
 .reviews-section .wrap{max-width:1340px}
 .contact-details .messenger-brand-icon{width:28px;height:28px;margin-inline:3px}
 .faq-section .faq details:last-child{border-bottom:0}
+
+@media(max-width:650px){.craft-hero .birthday-hero-image{width:min(100%,430px);max-width:430px;margin:0 auto;justify-self:center}.craft-hero .craft-hero-carousel{width:100%}}
+@media(max-width:760px){.contact-card{scroll-margin-top:100px}}
