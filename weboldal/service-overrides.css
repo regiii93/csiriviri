@@ -225,3 +225,7 @@
 .reviews-section .quote{display:flex;flex-direction:column;justify-content:center}
 
 .reviews-section .quote{justify-content:flex-start}.reviews-section .quote blockquote{flex:1;display:flex;align-items:center}.reviews-section .quote cite{margin-top:auto;align-self:flex-start}
+.reviews-section .voices-top{align-items:center}
+
+.reviews-section .wrap{max-width:1340px}
+.contact-details .messenger-brand-icon{width:28px;height:28px;margin-inline:3px}
