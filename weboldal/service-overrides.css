@@ -95,7 +95,7 @@
 .faq-content{grid-column:2;min-width:0}
 @media(max-width:820px){.faq-layout{grid-template-columns:1fr;gap:30px}.faq-image-frame{position:static;width:min(100%,420px);height:auto;justify-self:center}.faq-image{width:100%;height:auto}.faq-content{grid-column:1;width:100%}}
 
-.birthday-support-section{position:relative;isolation:isolate;background:linear-gradient(#FFF9F780,#FFF9F780),url("images/pasztell-bokeh-szalag.png") center 52%/cover no-repeat;padding:clamp(64px,8vw,110px) 0}
+.birthday-support-section{position:relative;isolation:isolate;background:linear-gradient(#FFF9F780,#FFF9F780),url("images/pasztell-bokeh-szalag.webp") center 52%/cover no-repeat;padding:clamp(64px,8vw,110px) 0}
 .birthday-support-copy{max-width:1340px;margin-inline:auto;padding:clamp(30px,5vw,60px);background:#fff;box-shadow:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:center;gap:clamp(24px,4vw,40px)}
 .birthday-support-art{position:relative;min-height:470px;width:100%}
 .birthday-support-art img{position:absolute;display:block;height:auto;object-fit:contain}
@@ -233,3 +233,14 @@
 
 @media(max-width:650px){.craft-hero .birthday-hero-image{width:min(100%,430px);max-width:430px;margin:0 auto;justify-self:center}.craft-hero .craft-hero-carousel{width:100%}}
 @media(max-width:760px){.contact-card{scroll-margin-top:100px}}
+
+@media(max-width:1050px){.site-header .header-inner>nav#menu{left:50%;right:auto;width:min(88vw,380px);transform:translateX(-50%);border:1px solid #E8DEDA}.site-header .header-inner>nav#menu .nav-cta{width:max-content;max-width:100%;align-self:flex-start}}
+
+@media(min-width:761px) and (max-width:1050px){.site-header .header-inner>button#menu-toggle{display:none}.site-header .header-inner>nav#menu,.site-header .header-inner>nav#menu.open{display:flex;position:static;inset:auto;width:auto;max-width:none;transform:none;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:9px 16px;padding:0;background:transparent;border:0;box-shadow:none;white-space:normal;font-size:clamp(11px,1.2vw,13px)}.site-header .header-inner>nav#menu .nav-cta{align-self:auto;white-space:nowrap}}
+
+@media(min-width:761px) and (max-width:1050px){.site-header .header-inner>button#menu-toggle{display:none}.site-header .header-inner>nav#menu,.site-header .header-inner>nav#menu.open{display:grid;position:static;inset:auto;width:auto;max-width:none;transform:none;grid-template-columns:repeat(2,max-content);grid-auto-flow:row;justify-content:center;align-content:center;align-items:center;gap:10px 24px;padding:0;background:transparent;border:0;box-shadow:none;white-space:normal;font-size:14px}.site-header .header-inner>nav#menu .nav-cta-responsive{display:none}.site-header .header-inner>.header-actions>.nav-cta{display:inline-flex;white-space:nowrap;font-size:13px}}
+
+@media(min-width:761px) and (max-width:850px){.site-header .header-inner>button#menu-toggle{display:flex}.site-header .header-inner>nav#menu,.site-header .header-inner>nav#menu.open{display:none;position:absolute;top:112px;left:50%;right:auto;width:min(88vw,380px);max-width:none;transform:translateX(-50%);flex-direction:column;align-items:stretch;gap:12px;padding:19px 25px 26px;background:#fff;border:1px solid #E8DEDA;box-shadow:0 10px 20px #46393718;white-space:normal;font-size:15px}.site-header .header-inner>nav#menu.open{display:flex}.site-header .header-inner>nav#menu .nav-cta-responsive{display:inline-flex;width:max-content;max-width:100%;align-self:flex-start;margin-top:8px}}
+
+@media(max-width:850px){.site-header .header-inner>nav#menu,.site-header .header-inner>nav#menu.open{left:50%;right:auto;width:max-content;max-width:calc(100vw - 36px);transform:translateX(-50%);padding-inline:18px}}
+@media(min-width:761px) and (max-width:850px){.site-header .header-inner>nav#menu .nav-cta-responsive{display:none}}
